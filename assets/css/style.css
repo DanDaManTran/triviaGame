@@ -1,0 +1,43 @@
+body{
+	margin: 0;
+	padding: 0;
+	background-size: cover;
+}
+
+.wrapper{
+	background-color: white;
+	margin: auto;
+	opacity: 0.6;
+	width: 100rem;
+	margin-top: 5rem;
+	text-align: center;
+	padding: 2rem;
+	height: 50rem;
+}
+
+.page-header{
+	width: 100rem;
+	margin: 0;
+}
+
+.answer{
+	width: 70rem;
+	margin: auto;
+	padding: 0.1rem;
+	margin-bottom: 2rem;
+	background-color: gray;
+}
+
+.aPage{
+	display: none;
+}
+
+.qPage{
+	display: none;
+}
+
+.btn{
+	padding: 4rem;
+	font-size: 4rem;
+	margin: 10rem;
+}
