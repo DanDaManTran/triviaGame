@@ -4,10 +4,11 @@ body{
 	background-size: cover;
 }
 
+/* wrapper to have a white transparent background but not transparent font and videos*/
 .wrapper{
 	background-color: white;
 	margin: auto;
-	opacity: 0.6;
+	background-color:rgba(256,256,256,0.4);
 	width: 100rem;
 	margin-top: 5rem;
 	text-align: center;
@@ -15,19 +16,22 @@ body{
 	height: 50rem;
 }
 
+
 .page-header{
 	width: 100rem;
 	margin: 0;
 }
 
-.answer{
+/*making choices bigger and easier to read*/
+.choice{
 	width: 70rem;
 	margin: auto;
-	padding: 0.1rem;
+	padding: 1rem;
 	margin-bottom: 2rem;
 	background-color: gray;
 }
 
+/* different pages to help hide and show each page of the trivia game. These pages are hidden at first cause we dont need it at the begining*/
 .aPage{
 	display: none;
 }
@@ -36,8 +40,19 @@ body{
 	display: none;
 }
 
-.btn{
+.gameOver{
+	display: none;
+}
+
+/*start button in the start page*/
+.btn-danger{
 	padding: 4rem;
 	font-size: 4rem;
 	margin: 10rem;
+}
+
+/*restart button in the game over page*/
+.btn-primary{
+	padding: 4rem;
+	font-size: 4rem;
 }
