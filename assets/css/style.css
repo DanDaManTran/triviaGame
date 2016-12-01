@@ -6,7 +6,6 @@ body{
 
 /* wrapper to have a white transparent background but not transparent font and videos*/
 .wrapper{
-	background-color: white;
 	margin: auto;
 	background-color:rgba(256,256,256,0.4);
 	width: 100rem;
@@ -55,4 +54,11 @@ body{
 .btn-primary{
 	padding: 4rem;
 	font-size: 4rem;
+}
+
+footer{
+	font-size: 2rem;
+	color: black;
+	font-weight: bold;
+	text-align: center;
 }

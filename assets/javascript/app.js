@@ -13,7 +13,7 @@ var questions = [{
 		time: 1000*88
 	},{
 		question: "What does Tyrion Lannister do?",
-		choices: ["He drink and he know things", "He is a gigolo", "He is a dwarf entertainer", "He is the King of the Seven Kingdom"],
+		choices: ["He drinks and he know things", "He is a gigolo", "He is a dwarf entertainer", "He is the King of the Seven Kingdom"],
 		answer: "He drink and he know things",
 		video: "https://www.youtube.com/embed/55-B_EICis8?autoplay=1&cc_load_policy=1",
 		time: 1000*28
@@ -55,8 +55,8 @@ var questions = [{
 		time: 1000*41
 	},{
 		question: 'Why does Hodor only say "Hodor"?',
-		choices: ["He was born with saying Hodor", "He was punished into only knowing Hodor", "He was suppose to hold the door", "He has been pretending this whole time"],
-		answer: "He was suppose to hold the door",
+		choices: ["He was born with saying Hodor", "He was punished into only knowing Hodor", "He was supposed to hold the door", "He has been pretending this whole time"],
+		answer: "He was supposed to hold the door",
 		video: "https://www.youtube.com/embed/wWH8QGgixfI?autoplay=1&cc_load_policy=1",
 		time: 1000*63
 	}];
@@ -88,7 +88,7 @@ $("document").ready(function(){
 			qPageTime = 29;
 			pageCountDown = setTimeout(toQ, questions[whichQ].time);
 		};
-	};
+	};//closing qPageCount function
 
 	//button to go back to qPage for the next question
 	function toQ(){
@@ -103,10 +103,10 @@ $("document").ready(function(){
 			$(".gameOver").show();
 			clearTimeout(pageCountDown);
 			$("#right").text("You got "+rightCount+" out of "+questions.length+" correct.");
-			$("#unanswered").text("You got "+unanswered+" out of "+questions.length+" unanswered answered.")
-			$("#wrong").text("You got "+(10-rightCount-unanswered)+" out of "+questions.length+" wrong.")
+			$("#unanswered").text("You got "+unanswered+" out of "+questions.length+" unanswered answered.");
+			$("#wrong").text("You got "+(10-rightCount-unanswered)+" out of "+questions.length+" wrong.");
 		}
-	};
+	};//closing toQ function
 
 	//starting the game
 	$(".btn-danger").on("click",function(){
@@ -123,7 +123,7 @@ $("document").ready(function(){
 			alert("Last chance to abort. After this they will be no more alerts.");
 			alertCount++;
 		} else if(alertCount==4){
-			alert("LOL one more ;). Let the Game of Trivia Begin")
+			alert("LOL one more ;). Let the Game of Trivia Begin");
 			$(".sPage").hide();
 			$(".qPage").show();
 			pageCountDown = setInterval( qPageCount,1000);
@@ -183,7 +183,7 @@ $("document").ready(function(){
 		$(".gameOver").hide();
 		nextQ();
 		$(".qPage").show();
-	});
+	});//closing restart button
 
 
 });
