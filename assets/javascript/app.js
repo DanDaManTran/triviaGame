@@ -14,7 +14,7 @@ var questions = [{
 	},{
 		question: "What does Tyrion Lannister do?",
 		choices: ["He drinks and he know things", "He is a gigolo", "He is a dwarf entertainer", "He is the King of the Seven Kingdom"],
-		answer: "He drink and he know things",
+		answer: "He drinks and he know things",
 		video: "https://www.youtube.com/embed/55-B_EICis8?autoplay=1&cc_load_policy=1",
 		time: 1000*28
 	},{
